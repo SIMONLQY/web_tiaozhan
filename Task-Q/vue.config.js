@@ -1,0 +1,13 @@
+module.exports={
+  assetsDir:"static/home",
+  devServer:{
+    proxy:{
+      '/api':{
+        target:'http://127.0.0.5',
+      },
+      '/uploads':{
+      	target:'http://127.0.0.5',
+      }
+    }
+  }
+}
